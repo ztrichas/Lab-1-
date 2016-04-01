@@ -9,12 +9,12 @@ def sumFunction(list):
 
 
 
-""" Function 0 """
-#Function detects if the number is even by seeing if there is a remainder when dividing by two
-def is_even(x):
+# Function 0 
 
+def is_even(x):
+"""Function detects if the number is even by seeing if there is a remainder when dividing by two"""
 	if x >= 0:
-		if x % 2 >= 1: #If the remainder is greater than or equal to one 
+		if x % 2 >= 1: """If the remainder is greater than or equal to one """
 		
 			return False
 		else:
@@ -22,10 +22,9 @@ def is_even(x):
 
 	
 
-""" Function 1 """
-#Function determines the length of a number by using a counter and dividing, counting the number of times that happens
-def length(x):
-	
+# Function 1
+
+	"""Function determines the length of a number by using a counter and dividing, counting the number of times that happens"""
 	counter = 0 
 	
 	while x >= 1:
@@ -34,9 +33,10 @@ def length(x):
 
 	return counter
 
-""" Function 2"""
-#Divides the number by 10 repeatedly and counts the remainders, then adds them together 
+#Function 2
+
 def sum_digits(x):
+"""Divides the number by 10 repeatedly and counts the remainders, then adds them together """
     sum = 0 
     while x > 0:
 		sum += x % 10
@@ -44,18 +44,19 @@ def sum_digits(x):
     return sum
 
 
-""" Function 3 """
-#Takes the sum of all the lesser ints
+#Function 3 
+
 def sum_of_lesser_ints(x):
+"""Takes the sum of all the lesser ints"""
 	list = range(x)
 	b = sumFunction(list)#Make own sum function #Loop and add
 	return b
 
 
-""" Function 4 """
-#Gets the factorial of the number
-def factorial(x):
+#Function 4 
 
+def factorial(x):
+"""Gets the factorial of the number"""
 	if x == 0: 
 		return 1  
 	else:
@@ -72,18 +73,20 @@ def factorial(x):
 	
 		return product 
 
-""" Function 5 """
-# Determines whether the first number is a factor of the 2nd
+#Function 5 
+
 def is_it_a_factor(x, y):
+""" Determines whether the first number is a factor of the 2nd"""
 	if x and y >= 0:
 		if y % x > 0:
 			return False
 		else:
 			return True
 
-""" Function 6 """
-# Determines whether a number is prime by dividing it by 2,3,5, and 7, which are the only things that would determine if it wasnt prime
+# Function 6 
+
 def is_it_prime(x):
+"""Determines whether a number is prime by dividing it by 2,3,5, and 7, which are the only things that would determine if it wasnt prime"""
 	if x == 1 or x == 0: 
 		return False 
 	else: 
@@ -99,9 +102,10 @@ def is_it_prime(x):
 			return True
 
 
-""" Function 7 """
-#Determines whether the number is perfect by taking the number and seeing if its factors added together equal the number
+#Function 7 
+
 def is_it_perfect(x):
+"""Determines whether the number is perfect by taking the number and seeing if its factors added together equal the number"""
 	list= [] 
 	list2 = []
 	
@@ -116,11 +120,11 @@ def is_it_perfect(x):
 		else: 
 			return False
 
-""" Function 8 """
+# Function 8
  
-#Determines if the sum of the digits divides evenly into the number, and calls on the previous sum_digits function 
-def sum_divided_by_number(x): 
 
+def sum_divided_by_number(x): 
+"""Determines if the sum of the digits divides evenly into the number, and calls on the previous sum_digits function """
 	if x == 0: 
 		return False 
 	else:
